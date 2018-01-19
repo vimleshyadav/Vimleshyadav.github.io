@@ -26,17 +26,17 @@
 
           <div class="w3-bar">
           <ul>
-            <li><a href="index.html" style="border:3px solid white" class="w3-bar-item w3-button w3-bar-item w3-button w3-hover-none w3-hover-border-red">Home</a></li>
-            <li><a href="About.html" style="border:3px solid white" class="w3-bar-item w3-button w3-hide-small w3-bar-item w3-button  w3-hover-orange w3-hover-border-red">About</a></li>
-          <li><a href="services.html" style="border:3px solid white" class="w3-bar-item w3-button w3-hide-small w3-bar-item w3-button  w3-hover-teal w3-hover-border-red">Services</a></li>
+            <li><a href="index.html" style="border:3px solid white" class="w3-bar-item w3-button w3-bar-item w3-button w3-hover-teal w3-hover-border-red">Home</a></li>
+            <li><a href="About.html" style="border:3px solid white" class="w3-bar-item w3-button w3-hide-small w3-bar-item w3-button  w3-hover-teal w3-hover-border-red">About</a></li>
+          <li><a href="https://techidealab.blogspot.in" style="border:3px solid white" class="w3-bar-item w3-button w3-hide-small w3-bar-item w3-button  w3-hover-teal w3-hover-border-red">Blogs</a></li>
          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
          </div>
 
          <div id="demo" class=" w3-bar w3-hide w3-hide-large w3-hide-medium   ">
            <br>
-         <li><a href="About.html"  style="border:3px solid white" class="w3-bar-item w3-button w3-hover-blue w3-hover-border-red">About</a></li><br>
+         <li><a href="About.html"  style="border:3px solid white" class="w3-bar-item w3-button w3-hover-teal w3-hover-border-red">About</a></li><br>
 
-         <li><a href="services.html"  style="border:3px solid white" class="w3-bar-item w3-button w3-hover-teal w3-hover-border-red ">Services</a></li>
+         <li><a href="https://techidealab.blogspot.in/"  style="border:3px solid white" class="w3-bar-item w3-button w3-hover-teal w3-hover-border-red ">Blogs</a></li>
              </div>
           </ul>
         </div>
@@ -56,7 +56,7 @@
     </section>
     <section id="newsletter">
       <div class="container">
-        <h1>suscribe to our newsletter</h1>
+        <h1>Suscribe to my newsletter</h1>
         <form>
           <input  class="w3-input w3-hover-blue  w3-animate-input" type="email" placeholder="Enter Email...">
           <br>
@@ -69,7 +69,7 @@
 
     <section id="boxes">
       <div style="text-align:center">
-        <h2>MY SKILLS</h2>        
+        <h2><a style="border:5px solid white" class="w3-bar-item w3-button  w3-bar-item w3-button  w3-hover-teal w3-hover-border-red">MY SKILLS</a></h2>
       </div>
       <div class="row ">
   <div class="column" onclick="openTab('b1');" style="background:orange;">
@@ -113,6 +113,51 @@
   <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move()">Check here</button>
    <p class="w3-text">Layout Formatting, CSS Spacing and Positioning</p>
  </div>
+    </section>
+
+    <section id="boxes">
+      <div class="row ">
+  <div class="column" onclick="openTab('b4');" style="background:teal;">
+   <img src="./img/logo-c.png">
+  </div>
+  <div class="column" onclick="openTab('b5');" style="background:red;">
+    <img src="./img/logo-catia.png">
+  </div>
+  <div class="column" onclick="openTab('b6');" style="background:orange;">
+  <img src="./img/logo-ansys.png">
+  </div>
+  </div>
+  <!-- Full-width columns: (hidden by default) -->
+  <div id="b4" class="containerTab" style="display:none;background:teal">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>C Programming</h3>
+  <div class="w3-light-blue w3-round-xxlarge">
+  <div id="myBar4" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
+  </div>
+  <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move4()">Check here</button>
+    <p class="w3-text">basics of C.</p>
+  </div>
+
+  <div id="b5" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>CATIA</h3>
+  <div class="w3-light-blue w3-round-xxlarge">
+  <div id="myBar5" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
+  </div>
+  <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move5()">Check here</button>
+  <br>
+  <p class="w3-text">2-D sketch, 3-D modeling, part assembly</p>
+  </div>
+
+  <div id="b6" class="containerTab" style="display:none;background:orange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>ANSYS</h3>
+    <div class="w3-light-blue w3-round-xxlarge">
+    <div id="myBar6" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
+  </div>
+  <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move6()">Check here</button>
+   <p class="w3-text">static analysis, Modal Analysis, Thermal analysis</p>
+  </div>
     </section>
 
     <footer>
@@ -161,6 +206,51 @@
         elem.innerHTML = width * 1  + '%';
       }
     }
+  }
+  </script>
+
+  <script>
+  function move4() {
+  var elem = document.getElementById("myBar4");
+  var width = 20;
+  var id = setInterval(frame, 30);
+  function frame() {
+    if (width >= 75) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+  }
+  function move5() {
+    var elem = document.getElementById("myBar5");
+  var width = 20;
+  var id = setInterval(frame, 30);
+  function frame() {
+    if (width >= 60) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+  }
+  function move6() {
+      var elem = document.getElementById("myBar6");
+  var width = 20;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 40) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
   }
   </script>
 
