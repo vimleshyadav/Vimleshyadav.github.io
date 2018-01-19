@@ -65,41 +65,54 @@
       </div>
     </section>
 
+
+
     <section id="boxes">
-      <div class="container">
+      <div style="text-align:center">
+        <h2>MY SKILLS</h2>        
+      </div>
+      <div class="row ">
+  <div class="column" onclick="openTab('b1');" style="background:orange;">
+   <img src="./img/logo_html.png">
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:blue;">
+    <img src="./img/logo_css.png">
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+  <img src="./img/logo_brush.png">
+  </div>
+</div>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:orange">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<h3>html5 Markup</h3>
+<div class="w3-light-blue w3-round-xxlarge">
+<div id="myBar" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
+</div>
+<button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move1()">Check here</button>
+    <p class="w3-text">Layout Formatting, HTML and CSS integration</p>
+  </div>
 
-        <div class="box w3-tooltip">
-          <img src="./img/logo_html.png" >
-        <h3>html5 Markup</h3>
-        <div class="w3-light-blue w3-round-xxlarge">
-        <div id="myBar" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
-        </div>
-        <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move1()">Check here</button>
-            <p class="w3-text">Layout Formatting, HTML and CSS integration</p>
-          </div>
-
-      <div class="box w3-tooltip">
-        <img src="./img/logo_css.png">
-      <h3>CSS3 Styling</h3>
-      <div class="w3-light-blue w3-round-xxlarge">
-      <div id="myBar1" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
-    </div>
-   <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move2()">Check here</button>
-   <br>
-    <p class="w3-text"> CSS Spacing and Positioning</p>
-    </div>
-
-    <div class=" box w3-tooltip">
-      <img src="./img/logo_brush.png">
-    <h3>Graphic Design</h3>
-      <div class="w3-light-blue w3-round-xxlarge">
-      <div id="myBar2" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
-    </div>
-    <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move()">Check here</button>
-     <p class="w3-text">Layout Formatting, CSS Spacing and Positioning</p>
-    </div>
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>CSS3 Styling</h3>
+  <div class="w3-light-blue w3-round-xxlarge">
+  <div id="myBar1" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
+</div>
+<button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move2()">Check here</button>
+<br>
+<p class="w3-text"> CSS Spacing and Positioning</p>
 </div>
 
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>Graphic Design</h3>
+    <div class="w3-light-blue w3-round-xxlarge">
+    <div id="myBar2" class="w3-container w3-round w3-blue w3-center" style="width:0%"> progress</div>
+  </div>
+  <button class="w3-button w3-green w3-btn w3-ripple w3-red w3-round-xxlarge" onclick="move()">Check here</button>
+   <p class="w3-text">Layout Formatting, CSS Spacing and Positioning</p>
+ </div>
     </section>
 
     <footer>
@@ -112,7 +125,7 @@
     var width = 20;
     var id = setInterval(frame, 30);
     function frame() {
-      if (width >= 25) {
+      if (width >= 75) {
         clearInterval(id);
       } else {
         width++;
@@ -161,6 +174,17 @@ function myFunction() {
     }
 }
 </script>
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
 
   </body>
 </html>
