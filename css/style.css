@@ -11,6 +11,16 @@ body{
   margin:auto;
   overflow:hidden;
 }
+.container1{
+	width:1170px;
+	margin:0px auto;
+}
+.about-template{
+	float:left;
+	width:100%;
+	padding:50px 0px 0px 0px;
+	text-align:center;
+}
 
 ul{
   margin:0;
@@ -218,4 +228,33 @@ footer{
   display: block;
   width: 100%;
   height: auto;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
